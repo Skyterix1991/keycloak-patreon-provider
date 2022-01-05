@@ -4,14 +4,14 @@ Keycloak Patreon Identity Provider plugin.
 
 ## Install
 
-Download `keycloak-patreon-ear-<version>.ear` from [Releases page](https://github.com/Skyterix1991/keycloak-patreon-oidc/releases).
+Download `keycloak-patreon-ear-<version>.ear` from [Releases page](https://github.com/Skyterix1991/keycloak-patreon-provider/releases).
 Then deploy it into `$KEYCLOAK_HOME/standalone/deployments/` directory.
 
 Or use provided Dockerfile.
 
 ### Patreon
 
-Register your application [Patreon Developer Portal](https://www.patreon.com/developers/).
+Register your application [Patreon Developer Portal](https://www.patreon.com/portal/registration/register-clients).
 You will get Client ID and Client Secret from the created application.
 
 ## Source Build
