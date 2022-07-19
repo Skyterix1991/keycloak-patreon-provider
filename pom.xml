@@ -12,7 +12,7 @@
 
     <properties>
         <version.keycloak>18.0.2</version.keycloak>
-        <version.wildfly.maven.plugin>3.0.1.Final</version.wildfly.maven.plugin>
+        <version.wildfly.maven.plugin>3.0.2.Final</version.wildfly.maven.plugin>
     </properties>
 
     <dependencyManagement>
