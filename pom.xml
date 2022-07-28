@@ -11,8 +11,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <version.keycloak>18.0.2</version.keycloak>
-        <version.wildfly.maven.plugin>3.0.2.Final</version.wildfly.maven.plugin>
+        <version.keycloak>19.0.0</version.keycloak>
     </properties>
 
     <dependencyManagement>
@@ -50,18 +49,4 @@
         <module>ear</module>
     </modules>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.wildfly.plugins</groupId>
-                    <artifactId>wildfly-maven-plugin</artifactId>
-                    <version>${version.wildfly.maven.plugin}</version>
-                    <configuration>
-                        <skip>true</skip>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
 </project>
