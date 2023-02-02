@@ -24,6 +24,11 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
+                <groupId>org.apache.httpcomponents.core5</groupId>
+                <artifactId>httpcore5</artifactId>
+                <version>5.2.1</version>
+            </dependency>
+            <dependency>
                 <groupId>org.keycloak.extensions</groupId>
                 <artifactId>keycloak-patreon-ejb</artifactId>
                 <version>${project.version}</version>
