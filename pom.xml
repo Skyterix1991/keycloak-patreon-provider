@@ -29,6 +29,27 @@
                 <version>5.2.1</version>
             </dependency>
             <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>1.15</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.24</version>
+                <scope>compile</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.19.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>1.33</version>
+            </dependency>
+            <dependency>
                 <groupId>org.keycloak.extensions</groupId>
                 <artifactId>keycloak-patreon-ejb</artifactId>
                 <version>${project.version}</version>
@@ -37,7 +58,6 @@
             <dependency>
                 <groupId>org.keycloak</groupId>
                 <artifactId>keycloak-server-spi-private</artifactId>
-                <scope>provided</scope>
                 <version>${version.keycloak}</version>
             </dependency>
             <dependency>
@@ -45,6 +65,12 @@
                 <artifactId>keycloak-services</artifactId>
                 <scope>provided</scope>
                 <version>${version.keycloak}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>
