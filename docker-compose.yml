@@ -1,0 +1,10 @@
+version: '3'
+services:
+  keycloak:
+    image: keycloak-patreon:latest
+    ports:
+      - "80:8080"
+    environment:
+      KEYCLOAK_ADMIN: "admin"
+      KEYCLOAK_ADMIN_PASSWORD: "admin"
+    entrypoint: /opt/keycloak/bin/kc.sh start-dev
